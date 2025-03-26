@@ -50,12 +50,3 @@ if st.button('추천'):
                 col.image(images[idx])
                 col.write(titles[idx])
                 idx += 1
-
-import subprocess
-import sys
-
-def run_streamlit():
-    subprocess.run([sys.executable, "-m", "streamlit", "run", "app.py"])
-
-if __name__ == "__main__":
-    run_streamlit()
